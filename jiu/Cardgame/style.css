@@ -1,0 +1,38 @@
+:root{
+   --ln:#B8BBFF;
+   --bg:#EAEBFF;
+}
+
+body {
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+font-size: 100px;
+
+text-shadow: 12px 10px var(--bg);
+color: var(--ln);
+margin: 10px auto 30px;
+}
+
+.all {
+    width: 530px;
+    margin: auto 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.card{
+    width: 125px;
+    height: 175px;
+    background-image:url('./card-bb.png'); 
+    background-size: center;
+    background-repeat: no-repeat;  // 아니 왜 단축으로 할 떄는 안되노?
+}
