@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✌️ Rock Paper Scissors</title>
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/rps.css" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/minigame/">
+        <img src="../asset/img/logo.gif" alt="MINI GAME">
+        MINI GAME
+      </a>
+    </h1>
+  </header>
+
+  <section id="wrap">
+    <h2 class="icon-list">
+      <img src="../asset/img/heartBeat-2.gif" alt="Rock Paper Scissors">
+      Rock Paper Scissors
+    </h2>
+
+    <!-- 게임아이템 선택 화면 -->
+    <div class="nes-container is-rounded is-dark">
+      <article class="game">
+        <h3 class="a11y-hidden">게임 화면</h3>
+        <p class="pc item" data-item="item-pc">
+          <span class="a11y-hidden">컴퓨터</span>
+        </p>
+        <span>vs</span>
+        <p class="user item" data-item="item-user">
+          <span class="a11y-hidden">바위</span>
+        </p>
+      </article>
+
+
+      <!-- 게임 현황판 -->
+      <div class="result">
+        <span>
+          <img src="../asset/img/pc.png" alt="pcImg">
+          PC
+        </span>
+        <div class="nes-balloon from-left">
+          <span class="pc-score">0</span>
+        </div>
+        <div class="nes-balloon from-right">
+          <span class="user-score">0</span>
+        </div>
+        <span>
+          <img src="../asset/img/user-1.png" alt="userImg" class="userImg">
+          YOU
+        </span>
+      </div>
+    </div>
+    <div></div>
+
+    <!-- 게임 아이템 선택 -->
+    <div class="selectItem">
+      <button class="nes-btn is-warning item-scissors" type="button" data-result="가위">
+        <span class="a11y-hidden">가위</span>
+      </button>
+      <button class="nes-btn is-primary item-rock" type="button" data-result="바위">
+        <span class="a11y-hidden">바위</span>
+      </button>
+      <button class="nes-btn is-success item-paper" type="button" data-result="보">
+        <span class="a11y-hidden">보</span>
+      </button>
+    </div>
+    </article>
+
+    <!-- 게임 결과 모달 다이얼로그 -->
+    <section>
+      <dialog class="nes-dialog is-rounded" id="dialog-default">
+        <form method="dialog" class="score">
+          <h3>
+            <img src="../asset/img/user-0.png" alt="user">
+            <span></span>
+          </h3>
+          <button type="submit" class="nes-btn is-error restart">One more game?</button>
+        </form>
+      </dialog>
+    </section>
+  </section>
+
+
+  <script src="../js/script.js"></script>
+  <script src="../js/rps.js"></script>
+</body>
+
+</html>
