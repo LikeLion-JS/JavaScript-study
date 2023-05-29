@@ -1,0 +1,7 @@
+/*여러 개의 이미지를 하나의 이미지로 합쳐서 관리하는 기법을 이미지 스프라이트(image sprite)라고 한다.*/
+
+#computer {
+  width: 153px;
+  height: 156px;
+  background: url(sprite.png) 0 0 no-repeat;
+}
